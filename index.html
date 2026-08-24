@@ -77,64 +77,104 @@
 
 
 	
-<!-----------------Portfolio-------------------->
-	<section class="about">
-
-		<div class= "about-image">
-			<img src="images/profile.jpg" alt="Profile picture" class="profile-img">
+<!-----------------Services-------------------->
+	<div id="services"> 
+		<div class="container">
+			<h1 class="sub-title">My services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web Design</h2>
+					<p>     </p>
+					<a href="#">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Graphic Design</h2>
+					<p>     </p>
+					<a href="#">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-regular fa-keyboard"></i>       <h2></h2>
+					<p></p>
+					<a href="#">Learn more</a>
+				</div>
+			</div>	
 		</div>
+	</div>
+					
 
-		<div class="about-text">
-			<h2>About Me</h2>
-			<p>I am an aspiring cybersecurity professional with a passion for protecting digital information and promoting secure technology practices. Guided by integrity, discipline, and curiosity, I am continuously building my knowledge in cybersecurity, programming, networking, and other areas of Information Technology. My goal is to help organizations strengthen their security while embracing continuous learning and professional growth.</p>
-			<a href="/Adzaho_Zipporah__CV.pdf">Download CV</a>
-		</div>
-
-		<div class="about-cards">
-			<div class="card"> </div>
-			<div class="card"> </div>
-			<div class="card"> </div>
-			<div class="card"> </div>
-			<h3></h3>
-			<p></p>
-		</div>
-
-    </section>
+<!-----------------Portfolio--------------->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="" >
+				<div class="layer">
+					<h3>My Portfolio</h3>
+					<p>  </p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="">
+				<div class="layer">
+					<h3>  </h3>
+					<p>   </p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				  </div>
+				</div>
+				<div class="work">
+					<img src="">
+					<div class="layer">
+						<h3>  </h3>
+						<a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="btn">See more</a>
+	</div>
+</div>
 	
-
-	<section>
-		<h2>Skills</h2>
-		<p>HTML, CSS, JAVA, JavaScript</p>
-    </section>
-
-    <section>
-		<h2>Projects</h2>
-		<p>Every project in this portfolio reflects my commitment to learning and applying cybersecurity concepts in practical ways. From conducting internal security audits to developing technical skills through coursework and personal projects, I continue to expand my knowledge and gain hands-on experience that prepares me for a career in cybersecurity.</p>
-    </section>
-    
-  </main>
-
-
-<footer>
-	<div class="footer">
-		<h2>Zipporah</h2>
-		<p>Building secure and modern web application</p>
-			<nav> 
-				<a href="index.html">Home</a>
-				<a href="about.html">About</a>
-				<a href="projects.html">Projects</a>
-				<a href="contact.html">contact</a>
-			</nav>
-	
-		<a href="#" class="fa fa-google" aria-label="Google"></a>
-		<a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
-		<a href="#" class="fa fa-youtube" aria-label="Youtube"></a>
-		<a href="#" class="fa fa-snapchat-ghost" aria-label="Snapchat"></a>
-		<a href="#" class="fa fa-pinterest" aria-label="Pinterest"></a>
-
+<!-------------contact-------------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title"Contact Me></h1>
+				<p><i class="fa-solid fa-paper-plane"></i>adzahozipporah4@gmail.com</p>
+				<p><i class="fa-solidfa-square-phone"></i>0553260712</p>
+				<p><i class="fa-blands fa-square-whatsapp"></i>0553260712</p>
+				<div class="social-icons">
+					<a href="#" class="fa fa-google" aria-label="Google"></a>
+					<a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
+					<a href="#" class="fa fa-youtube" aria-label="Youtube"></a>
+					<a href="#" class="fa fa-snapchat-ghost" aria-label="Snapchat"></a>
+					<a href="#" class="fa-brands" fa-github aria-label="Github"></a>
+				</div>
+				<a href="">Download CV</a>
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Nmae" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
 		<p>&copy; 2026 Zipporah Adzaho. All copyright reserved</p>
 	</div>
-</footer>
+</div>
+
+
+<script>
+	var tablink = document.getElementsByClassName("tab-link")
+</script>
 
 </body>
 </html>
