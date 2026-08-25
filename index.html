@@ -173,7 +173,49 @@
 
 
 <script>
-	var tablink = document.getElementsByClassName("tab-link")
+	var tablink = document.getElementsByClassName("tab-link");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+		tablink.classlist.remove("active-link");
+	}
+	for(tabcontent of tabcontents){
+		tabcontent.classlist.remove("active-tab");
+	}
+	event.currentTarget.classlist.add("active-link");
+	document.getElementById(tabname).classlist.add("active-tab");
+	}
+</script>
+
+<script>
+	var sidemenu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	function closemenu(){
+		sidemenu.style.right= "-200px"
+	}
+</script>
+
+<script>
+	const scripURL= 'https://script.google.com/macros/s/AKfycbznmhMjuJP13JhqkYGpLfiWX_vl4enHig6bE5OpdFgJHHcr4ZEr26PgaVK4K8IGS0ofaw/exec'
+	const form = document.forms['submit-to-gogle-sheet']
+	const msg = document.getElementById('msg')
+
+	form.addEventListener('submit', e =>{
+		e.prevent=Default()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => {
+				msg.innerHTML = "Message sent successfully"
+				setTimeout(function(){
+					msg.innerHTML = ""
+				},5000)
+				form.reset()
+			})
+			.catch(error => console.error('Error!', error.message))
+		})
 </script>
 
 </body>
